@@ -1,0 +1,52 @@
+Secure Coding Review Report
+Introduction
+
+Secure coding is the practice of developing software in a way that reduces vulnerabilities and improves security. This project reviews a sample Python application and identifies security issues.
+
+Objective
+
+To identify vulnerabilities in a Python application and recommend secure coding improvements.
+
+Vulnerable Code Review
+
+The reviewed application contained:
+
+Hard-coded password
+Weak password handling
+Sensitive information exposure
+Vulnerability Analysis
+1. Hard-Coded Password
+
+Risk:
+Anyone with access to the source code may discover the password.
+
+Recommendation:
+Do not store sensitive credentials directly in source code.
+
+2. Weak Password Handling
+
+Risk:
+Insecure handling of authentication information.
+
+Recommendation:
+Use secure password storage and authentication practices.
+
+3. Sensitive Information Exposure
+
+Risk:
+Passwords may be exposed on screen or in logs.
+
+Recommendation:
+Never display or log passwords.
+
+Secure Code Improvements
+Removed password display
+Improved information handling
+Used generic authentication responses
+Results
+
+The improved version reduces the risk of exposing sensitive information and follows safer coding practices.
+
+Conclusion
+
+The project successfully identified common security weaknesses and demonstrated practical improvements that make software more secure.

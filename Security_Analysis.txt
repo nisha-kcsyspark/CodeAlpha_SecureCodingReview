@@ -1,0 +1,37 @@
+CodeAlpha – Secure Coding Review
+Vulnerability 1: Hard-Coded Password
+
+Problem:
+The password admin123 is directly stored inside the source code.
+
+Risk:
+Anyone who can access the source code may discover the password.
+
+Recommendation:
+Sensitive credentials should not be stored directly in source code. They should be managed securely using environment variables or a proper secret-management solution.
+
+Vulnerability 2: Weak Password Handling
+
+Problem:
+The entered password is directly compared with a hard-coded password.
+
+Risk:
+This is an insecure way of handling authentication credentials.
+
+Recommendation:
+Use secure authentication practices and appropriate password-hashing mechanisms for stored passwords.
+
+Vulnerability 3: Sensitive Information Exposure
+
+Problem:
+The user's password is printed directly using print().
+
+Risk:
+The password could be exposed on the screen, logs, or recorded output.
+
+Recommendation:
+Never display or log passwords. Sensitive information should be protected and handled carefully.
+
+Overall Recommendation
+
+The application should avoid hard-coded credentials, use secure password handling, and prevent sensitive information from being displayed or logged.
